@@ -18,9 +18,26 @@
 
 using namespace vex;
 
+const int DEGREES_90 = 90;
+const int ARENA_HEIGHT = 88;
+const int ARENA_WIDTH = 70;
+const int START_Y = ARENA_HEIGHT / 2;
+const int START_X = ARENA_WIDTH / 2;
+
+void craneReset();
+
 int main() {
   // Initializing Robot Configuration. DO NOT REMOVE!
   vexcodeInit();
 
+  craneReset();
+
+  Drivetrain.driveFor(ARENA_HEIGHT - START_Y, inches);
+  Drivetrain.turnFor(DEGREES_90, degrees);
+  Drivetrain.driveFor(ARENA_WIDTH / 2, inches);
+  
+}
+
+void craneReset() {
   
 }
