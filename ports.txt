@@ -1,0 +1,4 @@
+Left motor = 10
+Right motor = 2
+Claw motor = 3
+Arm motor = 8
